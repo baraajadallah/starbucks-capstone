@@ -124,7 +124,7 @@ import re
 # In[8]:
 
 
-#import progressbar
+import progressbar
 
 
 # In[ ]:
@@ -740,42 +740,42 @@ def combine_data(profile, portfolio, offers_df, transaction_df):
 # In[70]:
 
 
-#data = combine_data(profile, portfolio, offers_df, transaction_df)
+data = combine_data(profile, portfolio, offers_df, transaction_df)
 
 
 # In[71]:
 
 
-#data.columns
+data.columns
 
 
 # In[72]:
 
 
-#column_ordering = ['time', 'offer_id', 'customer_id', 'total_amount',
-                   #    'offer_successful', 'difficulty', 'duration', 'offer_type',
-                    #   'reward', 'bogo', 'discount', 'informational',
-                     #  'email', 'mobile', 'social', 'web', 'gender', 'agerange',
-                      # 'income', 'became_member_on', ]
-#data = data[column_ordering]
+column_ordering = ['time', 'offer_id', 'customer_id', 'total_amount',
+                       'offer_successful', 'difficulty', 'duration', 'offer_type',
+                       'reward', 'bogo', 'discount', 'informational',
+                       'email', 'mobile', 'social', 'web', 'gender', 'agerange',
+                       'income', 'became_member_on', ]
+data = data[column_ordering]
 
 
 # In[73]:
 
 
-#data.head()
+data.head()
 
 
 # In[74]:
 
 
-#data.shape
+data.shape
 
 
 # In[75]:
 
 
-#data.to_csv('master_offer_analysis.csv', index=False)
+data.to_csv('master_offer_analysis.csv', index=False)
 
 
 # In[76]:
